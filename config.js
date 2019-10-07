@@ -19,10 +19,22 @@ module.exports = {
     }
     const defaultVarsConfig = JSON.parse(fs.readFileSync(`${this.getInstallationPath()}/default-var-config.json`, 'UTF-8'));
 
-    const everyConfig = {
+    let everyConfig = {
       cssClasses: [...defaultVarsConfig.cssClasses, ...customVarsConfig.cssClasses],
       customDimensions: [...defaultVarsConfig.customDimensions, ...customVarsConfig.customDimensions],
       defaultDimensions: [...defaultVarsConfig.defaultDimensions, ...customVarsConfig.defaultDimensions],
+    }
+    
+    if (customVarsConfig.cssClasses) {
+      everyConfig.cssClasses = [...defaultVarsConfig.cssClasses, ...customVarsConfig.cssClasses];
+    }
+
+    if (customVarsConfig.customDimensions) {
+      everyConfig.customDimensions = [...customVarsConfig.customDimensions];
+    }
+
+    if (customVarsConfig.defaultDimensions) {
+      everyConfig.defaultDimensions = [...customVarsConfig.defaultDimensions];
     }
 
     return everyConfig;
