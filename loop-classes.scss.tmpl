@@ -1,0 +1,13 @@
+[INSERT_SCSS_MAP]
+
+
+@each $instance, $class in $map-loop {
+  $classname: map-get($class, classname);
+  $unit: map-get($class, unit);
+  $property: map-get($class, property);
+  @each $dim in map-get($class, dimensions) {
+    .#{$classname}-#{$dim} {
+        #{$property}: #{$dim}#{$unit};
+    }
+  }
+}

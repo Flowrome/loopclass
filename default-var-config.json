@@ -1,0 +1,26 @@
+{
+  "cssClasses": [
+    { "class": "height-per", "property": "height", "unit": "%" },
+    { "class": "height-vh", "property": "height", "unit": "vh" },
+    { "class": "width-per", "property": "width", "unit": "%" },
+    { "class": "width-vw", "property": "width", "unit": "vw" },
+    { "class": "mt", "property": "margin-top", "unit": "px" },
+    { "class": "mb", "property": "margin-bottom", "unit": "px" },
+    { "class": "mr", "property": "margin-right", "unit": "px" },
+    { "class": "ml", "property": "margin-left", "unit": "px" },
+    { "class": "mt-per", "property": "margin-top", "unit": "%" },
+    { "class": "mb-per", "property": "margin-bottom", "unit": "%" },
+    { "class": "mr-per", "property": "margin-right", "unit": "%" },
+    { "class": "ml-per", "property": "margin-left", "unit": "%" },
+    { "class": "pt", "property": "padding-top", "unit": "px" },
+    { "class": "pb", "property": "padding-bottom", "unit": "px" },
+    { "class": "pr", "property": "padding-right", "unit": "px" },
+    { "class": "pl", "property": "padding-left", "unit": "px" },
+    { "class": "pt-per", "property": "padding-top", "unit": "%" },
+    { "class": "pb-per", "property": "padding-bottom", "unit": "%" },
+    { "class": "pr-per", "property": "padding-right", "unit": "%" },
+    { "class": "pl-per", "property": "padding-left", "unit": "%" }
+  ],
+  "customDimensions": [1, 2, 3, 4],
+  "defaultDimensions": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
+}
